@@ -5,7 +5,6 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
-
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-links a");
 
@@ -26,3 +25,20 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+const phoneLink = document.getElementById('phone-number');
+
+if (phoneLink) {
+    phoneLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        const phoneNumber = phoneLink.textContent;
+
+        navigator.clipboard.writeText(phoneNumber)
+            .then(() => {
+                alert(`Phone number ${phoneNumber} copied to clipboard!`);
+            })
+            .catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+    });
+}
