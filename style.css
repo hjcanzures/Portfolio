@@ -26,6 +26,8 @@ p {
     width: 100%;
     z-index: 1000;     
     padding: 0 2rem;
+    background-color: white;
+    height: 14vh;
 }
 /* TRANSITION */
 
@@ -446,8 +448,8 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
-  margin: 0 1rem;
+  height: 23vh;
+  margin: 0rem 1rem;
 }
 
 footer p {
@@ -462,6 +464,7 @@ footer p {
     left: 50%;
     transform: translateX(-50%) translateY(-100%);
     color: black;
+    background: white;
     padding: .8rem 2rem;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
